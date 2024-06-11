@@ -14,7 +14,7 @@ screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to Rolls!"
+      title: "Welcome to Rolls Kyoto!"
       icon: "/path/to/icon"
       description: |
         Welcome to Rolls Kyoto! The sweetest distro around! Let's get you started by picking some applications!
@@ -49,46 +49,49 @@ screens:
         system: true
       groups:
         Core:
-          description: Core
+          description: Core Applications.
           default: true
           packages:
           - Calculator: org.gnome.Calculator
-          - Floorp (Web Browser): one.ablaze.floorp
           - Clapper: com.github.rafostar.Clapper
           - Flatseal Permissions Manager: com.github.tchx84.Flatseal
         Office:
-          description: Office apps.
+          description: Office applications and art.
           default: false
           packages:
           - Libreoffice: org.libreoffice.LibreOffice
           - OnlyOffice:  org.onlyoffice.desktopeditors
-          - Thunderbird Email: org.mozilla.Thunderbird
-        Misc:
+        Communication:
           default: false
-          description: Misc items including a Photo Organiser
+          description: Communication and collaboration tools.
           packages:
-           - Photo Organizer: org.gnome.Shotwell
-        Other Web Browsers:
-          description: Additional browsers to complement Firefox
+          - Discord: com.discordapp.Discord
+          - Slack: com.slack.Slack
+          - Thunderbird: org.mozilla.Thunderbird
+        Browsers:
+          description: Install a browser! (We recommend Floorp!)
           default: false
           packages:
+          - Floorp (Recommended!): one.ablaze.floorp
+          - Firefox: com.mozilla.Firefox
           - Brave: com.brave.Browser
           - Google Chrome: com.google.Chrome
           - Microsoft Edge: com.microsoft.Edge
           - Opera: com.opera.Opera
           - Vivaldi: com.vivaldi.Vivaldi
-        Communication:
+        Miscellaneous:
           default: false
-          description: Tools to communicate and collaborate
+          description: Additional apps you may find useful.
           packages:
-          - Discord: com.discordapp.Discord
-          - Slack: com.slack.Slack
+          - Krita: org.kde.krita
+          - Kdenlive: org.kde.kdenlive
+          - Image Organiser: org.gnome.shotwell
 
   final-screen:
     source: yafti.screen.title
     values:
-      title: "All done, enjoy your new system!"
+      title: "Congratulations!"
       icon: "/path/to/icon"
       description: |
-        Please log out and log back in for the applications to show up.
+        If you installed applications, please log out and log back in for them to show up! Please report bugs on the GitHub page and we will fix them as soon as possible!
 
